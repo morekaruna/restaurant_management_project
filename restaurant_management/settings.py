@@ -129,3 +129,5 @@ STATICFILES_DIRS = [BASE_DIR / "home" / "static"]
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+RESTAURANT_NAME = "Tasty Bites Restaurant"
