@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <title>About {{ restaurant_name }}</title>
 </head>
-<body>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4;">
 
-    <div style="padding: 20px;">
-        <h1>About {{ restaurant_name }}</h1>
-        <p>{{ description }}</p>
+    <div style="max-width: 900px; margin: 40px auto; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <h1 style="color: #333; text-align: center;">About {{ restaurant_name }}</h1>
+        <p style="color: 555; font-size: 18px; line-height: 1.6; text-align: center;">Welcome to <strong> {{ restaurant_name }}</strong>! <br>
+        We are passionate about serving delicious meals made with fresh ingredients.
+        Whether you're dining in, ordering take-out, or enjoying a family celebration, we aim to make every visit memorable.</p>
 
-        <img src="{% static 'home/images/restaurant.jpg' %}"
-        alt="Front of {{ restautant_name }}"
-        style="max-width: 100%; border-radius: 8px; margin-top: 20px;">
+        <div style="text-align: center; margin-top: 25px;">
+            <img src="https://images.unsplash.com/photo-1555992336-cbf2a29cb1a9"
+            alt="Front of {{ restautant_name }}"
+            style="max-width: 800%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+        </div>
     </div>
+
 </body>
+</html>
