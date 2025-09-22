@@ -15,5 +15,9 @@
     <div style="padding: 20px;">
         <h1>About {{ restaurant_name }}</h1>
         <p>{{ description }}</p>
+
+        <img src="{% static 'home/images/restaurant.jpg' %}"
+        alt="Front of {{ restautant_name }}"
+        style="max-width: 100%; border-radius: 8px; margin-top: 20px;">
     </div>
 </body>
