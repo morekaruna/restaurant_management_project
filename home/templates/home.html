@@ -7,14 +7,14 @@
 </head>
 <body style="margin: 0; font-family: Arial;">
 
-    <nav style="background-color: #333; padding: 10px;">
-        <a href="{% url 'home' %}" style="color: white; margin-right: 15px; text-decoration: none;">Home</a>
-        <a href="{% url 'about' %}" style="color: white; text-decoration: none;">About</a>    
+    <nav style="background-color: #222; padding: 12px; display: flex; justify-content: flex-start;">
+        <a href="{% url 'home' %}" style="color: white; margin-right: 20px; text-decoration: none; font-weight: bold; transition: 0.3s;" onmouseover="this.style.color='#ff9800'" onmouseout="this.style.color='white'">Home</a>
+        <a href="{% url 'about' %}" style="color: white; text-decoration: none; font-weight: bold; transition: 0.3s;" onmouseover="this.style.color='#ff9800'" onmouseout="this.style.color='#white'">About</a>    
     </nav>   
 
-    <div style="pading: 20px;">
-        <h1>Welcome to {{ restaurant_name }}</h1>
-        <p>Your favorite place for delicious meals and cool ambience.</p>
+    <div style="pading: 20px; text-align: center;">
+        <h1 style="color: #333">Welcome to {{ restaurant_name }}</h1>
+        <p style="color: #666; font-size: 18px;">Your favorite place for delicious meals and cool ambience.</p>
     </div>
     
 </body>
